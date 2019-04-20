@@ -24,7 +24,7 @@ URL:- http://localhost:3000/semesters/3
 Method :- PUT
 body:- { "semester": {"name": "sen4"}}
 ```
-###delete
+### delete
 ```
 URL :- http://localhost:3000/semesters/3
 ```
