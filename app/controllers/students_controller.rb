@@ -12,7 +12,8 @@ class StudentsController < ApplicationController
   # GET /students/1
   # GET /students/1.json
   def show
-    render :json => @student
+    student = @student.as_json
+    render :json => student
   end
 
   # GET /students/new

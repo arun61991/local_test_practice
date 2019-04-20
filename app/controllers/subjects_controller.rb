@@ -11,7 +11,8 @@ class SubjectsController < ApplicationController
   # GET /subjects/1
   # GET /subjects/1.json
   def show
-    render :json => @subject
+    subject = @subject.as_json
+    render :json => subject
   end
 
   # GET /subjects/new

@@ -12,7 +12,10 @@ class SemestersController < ApplicationController
   # GET /semesters/1
   # GET /semesters/1.json
   def show
-    render :json => {semester: @semester, subject: @semester.subjects}
+    semester = @semester.as_json
+    semester[:subject] = @semester.subjects.as_json
+    semester[:student] = @semester.students.as_json
+    render :json => semester
   end
 
   # GET /semesters/new
