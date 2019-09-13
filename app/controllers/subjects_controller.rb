@@ -5,7 +5,7 @@ class SubjectsController < ApplicationController
   # GET /subjects.json
   def index
     @subjects = Subject.all
-    render :json => @subjects
+    # render :json => @subjects
   end
 
   # GET /subjects/1
